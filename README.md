@@ -43,9 +43,5 @@ Total issues:
 
 ```
 
-Also, burp extention exists.
-
-- [PortSwigger/nginx-alias-traversal: Burp extension to detect alias traversal via NGINX misconfiguration at scale.](https://github.com/PortSwigger/nginx-alias-traversal)
-
 ## Licence
 The MIT License
