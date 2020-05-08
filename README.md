@@ -1,5 +1,7 @@
 # Nginx SSRF sample app
 
+There is a vulnerability in Nginx that can be caused by misconfiguration. One of them is `SSRF`.
+
 ![top](./screenshots/top.png)
 
 ![flag](./screenshots/flag.png)
@@ -27,11 +29,11 @@ Reason: At least variable "$1" can contain untrusted user input
 Pseudo config:
 
 server {
-	server_name localhost;
+  server_name localhost;
 
-	location ~ /proxy/(.*)/(.*)$ {
-		proxy_pass http://$1/$2;
-	}
+  location ~ /proxy/(.*)/(.*)$ {
+    proxy_pass http://$1/$2;
+  }
 }
 
 ==================== Summary ===================
@@ -43,5 +45,6 @@ Total issues:
 
 ```
 
-## Licence
-The MIT License
+## License
+Apache License
+
